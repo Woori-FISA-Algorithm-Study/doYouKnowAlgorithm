@@ -51,9 +51,9 @@ public class Main {
 					res[lt] = evenChar[toLt];
 					res[rt] = evenChar[toRt];
 					toLt += 2;
-          toRt += 2;
+          				toRt += 2;
 					lt++;
-          rt--;
+          				rt--;
 				}
 				
 				for(char c : res) {
@@ -74,9 +74,9 @@ public class Main {
 					res[lt] = evenChar[toLt];
 					res[rt] = evenChar[toRt];
 					toLt += 2;
-          toRt += 2;
+          				toRt += 2;
 					lt++;
-          rt--;
+          				rt--;
 				}
 				
 				for(char c : res) {
