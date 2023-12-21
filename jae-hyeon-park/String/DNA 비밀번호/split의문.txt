@@ -14,10 +14,12 @@ import java.util.stream.Stream;
 				//BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 
 		        Scanner sc = new Scanner(System.in);
+		        Scanner sc2 = new Scanner(System.in);
+		        Scanner sc3 = new Scanner(System.in);
 		        
 		        String bf = sc.next();
-		        String bf2 = sc.next();
-		        String bf3 = sc.next();
+		        String bf2 = sc2.next();
+		        String bf3 = sc3.next();
 
 		        int s = 0;
 		        int p = 0;
@@ -29,29 +31,33 @@ import java.util.stream.Stream;
 //		        	p = Integer.parseInt(st.nextToken());
 //				}
 		        
-		       String[] st2 = bf2.split("");
+		       String[] st = bf.split("");
 		       int[] sp = {0,0};
-		      for(int i=0; i<st2.length; i++) {
-		    	  sp[i] = Integer.parseInt(st2[i]);
+		      for(int i=0; i<st.length; i++) {
+		    	  sp[i] = Integer.parseInt(st[i]); //
 		      }
 		       
-		        System.out.println(sp[0]); ->sp[1]이 나옴
+		        
 		        s= sp[0];
 		        p= sp[1];
 		
 		       
 
 		        char[] inValue = bf2.toCharArray(); //들어온 값을 하나씩 넣기
+		       
 
 		        int[] conditionAlpha =  {0, 0, 0, 0}; //필수 알파벳 개수 들어갈것 A,C,G,T 순
 
 		        int count = 0; //acgt가 모두 원하는 값만큼 달성했는지 확인용
 		        int result = 0;
 
-		        String[] st = bf.split("");
+		        String[] st2 = bf3.split(" ");
+		        
 
-		        for(int i=0;i<4;i++){
-		            conditionAlpha[i] = Integer.parseInt(st[i]); //필수 알파벳 개수 넣기
+		        for(int i=0; i<4; i++){
+		            conditionAlpha[i] = Integer.parseInt(st2[i]); //필수 알파벳 개수 넣기
+		            System.out.println(conditionAlpha[i]);  -----------------------> 확인용 나오는 값 1 0 0 1에서 1만 나오고 
+													Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1 에러 나옴
 		            if(conditionAlpha[i]==0){
 		                count++; //0인경우 미리 더해놓기
 		            }
@@ -104,3 +110,97 @@ import java.util.stream.Stream;
 
 			}
 		}
+
+
+
+
+
+
+		///////////////////////////////////////////////
+		package coding1;
+
+
+import java.io.*;
+import java.util.*;
+
+public class Num12891 {
+    public static void main(String[] args) throws IOException {
+		//BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+
+        //Scanner sc = new Scanner(System.in);
+        //String bf = sc.next();
+        String bf = "4 2\n" + "GATA\n" + "1 0 0 1\n";
+
+
+        StringTokenizer st = new StringTokenizer(bf);
+
+        int s = Integer.parseInt(st.nextToken());
+        int p = Integer.parseInt(st.nextToken());
+        System.out.println(s);
+        
+        st = new StringTokenizer(bf, "\n");  -------------> 엔터키 기준 쪼개기
+
+        char[] inValue = st.nextToken().toCharArray(); //들어온 값을 하나씩 넣기
+        System.out.println(inValue); ------------------------------------------------->GATA를 쪼갠것이 아닌 4 2가 나옴
+
+        int[] conditionAlpha =  {0, 0, 0, 0}; //필수 알파벳 개수 들어갈것 A,C,G,T 순
+
+        int count = 0; //acgt가 모두 원하는 값만큼 달성했는지 확인용
+        int result = 0;
+
+        st = new StringTokenizer(bf);
+
+        for(int i=0;i<4;i++){
+            conditionAlpha[i] = Integer.parseInt(st.nextToken()); //필수 알파벳 개수 넣기
+            if(conditionAlpha[i]==0){
+                count++; //0인경우 미리 더해놓기
+            }
+        }
+
+        //int[] checkAlpha = {conditionAlpha[0],conditionAlpha[1],conditionAlpha[2],conditionAlpha[3]};
+
+
+        for(int i=0; i<=s-p; i++){
+            int[] checkAlpha = {conditionAlpha[0],conditionAlpha[1],conditionAlpha[2],conditionAlpha[3]}; //다시 조건 리셋
+
+            for(int j=i; j<p+i; j++){         //바뀌는 위치만큼 범위도 증가
+
+            switch (inValue[j]) {
+                case 'A':
+                    checkAlpha[0]--;
+                    if(checkAlpha[0] == 0){ //조건 달성시
+                        count++;
+                    }
+                case 'C':
+                    checkAlpha[1]--;
+                    if(checkAlpha[0] == 0){ //조건 달성시
+                        count++;
+                    }
+                case 'G':
+                    checkAlpha[2]--;
+                    if(checkAlpha[0] == 0){ //조건 달성시
+                        count++;
+                    }   
+                case 'T':
+                    checkAlpha[3]--;
+                    if(checkAlpha[0] == 0){ //조건 달성시
+                        count++;
+                    }    
+            
+                default:
+                    ;
+            }
+
+            if(count==4){ //모든 조건 달성
+                result++;
+                break;
+            }
+                
+
+        }
+        }
+
+        System.out.println(result);
+
+	}
+}

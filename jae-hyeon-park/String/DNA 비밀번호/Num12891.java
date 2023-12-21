@@ -7,6 +7,7 @@ public class Num12891 {
 
         //Scanner sc = new Scanner(System.in);
         //String bf = sc.next();
+        //String bf = "4 2\n" + "GATA\n" + "1 0 0 1\n";
 
 
         StringTokenizer st = new StringTokenizer(bf.readLine());
