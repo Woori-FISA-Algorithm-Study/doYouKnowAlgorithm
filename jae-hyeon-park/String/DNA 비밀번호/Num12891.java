@@ -4,6 +4,11 @@ import java.util.*;
 public class Num12891 {
     public static void main(String[] args) throws IOException {
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+
+        //Scanner sc = new Scanner(System.in);
+        //String bf = sc.next();
+
+
         StringTokenizer st = new StringTokenizer(bf.readLine());
 
         int s = Integer.parseInt(st.nextToken());
