@@ -23,8 +23,8 @@
     1. 미팅 전까지 PR 올리기
     2. 가볍게 스티디원 풀이 코드 확인 및 코멘트
   - 미팅 때
-    1. 자신이 푼 문제 풀이 공유
-    2. 다른 방법으로 해결한 스터디원이 있을 경우 해당 풀이 공유
+    1. 알고리즘 정의
+    2. 문제 풀이 공유
     3. 다음 주 필수 문제 선택
   - 미팅 후
     1. PR 코멘트 & Approve & merge
@@ -36,5 +36,5 @@
 
 |     이진천<br>       |            우지음            |                  박재현                 |                      김유은                |
 | :-------------------------------: | :--------------------------------------: | :-----------------------------------------: | :------------------------------: | 
-| <img alt="이진천"  src="https://github.com/LeeJincheon.png" height="100" width="100"> | <img alt="우지음" src="https://github.com/oozeume.png" height="100" width="100"> |   <img alt="박재현"  src=" https://github.com/mark971008.png" height="100" width="100"> | <img alt="김유은" src="https://github.com/YueunKim.png" height="100" width="100"> | 
-|   [@LeeJincheon](https://github.com/LeeJincheon)   |     [@oozeume](https://github.com/oozeume)     |     [@mark971008](https://github.com/mark971008)     |        [@YueunKim](https://github.com/YueunKim)      |
+| <img alt="이진천"  src="https://github.com/LeeJincheon.png" height="100" width="100"> | <img alt="우지음" src="https://github.com/oozeume.png" height="100" width="100"> |   <img alt="박재현"  src=" https://github.com/jae-hyeon-park.png" height="100" width="100"> | <img alt="김유은" src="https://github.com/YueunKim.png" height="100" width="100"> | 
+|   [@LeeJincheon](https://github.com/LeeJincheon)   |     [@oozeume](https://github.com/oozeume)     |     [@jae-hyeon-park](https://github.com/jae-hyeon-park)     |        [@YueunKim](https://github.com/YueunKim)      |
