@@ -27,6 +27,7 @@ if (Array.from(charCount.values()).filter(count => count % 2 === 1).length > 1) 
     const first = input.shift(); // 첫번째요소 제거하고 반환
     const idx = input.indexOf(first);
     center = (idx === -1) ? first : center; // 중앙에 들어갈 문자 설정
+    console.log('-->', front);
     front = (idx !== -1) ? [...front, first] : front; // 앞 부분에 추가
     input.splice(idx, (idx !== -1) ? 1 : 0); // 중복된 문자는 배열에서 제거
   }
