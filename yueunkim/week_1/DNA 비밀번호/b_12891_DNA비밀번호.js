@@ -5,8 +5,8 @@ const input = require("fs")
   .trim()
   .split("\n");
 
-const [strLength, subStrLength] = input[0].split(" ").map(Number);
 const str = input[1];
+const [strLength, subStrLength] = input[0].split(" ").map(Number);
 const dnaStr = ["A", "C", "G", "T"];
 const dnaStrNum = input[2].split(" ").map(Number);
 const dna = dnaStr.reduce((obj, key, index) => {
