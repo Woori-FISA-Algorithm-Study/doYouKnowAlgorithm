@@ -13,17 +13,27 @@ for (let i = 1; i <= n; i++) {
 }
 // console.log(arr); // [[3, 10], [5, 20], [1, 10] ... ]
 
-// let income = 0; // 총 금액
-// let term = 0; // 상담하는데 걸리는 시간
-// let allTerm = 0; // 상담하는데 걸리는 총 시간
+// 1. dp 초기화
+// 2. 각 일정을 period, profit에 담는다
+// 3. 퇴사 전에 처리 불가하면 continue
+// 4. 현재 상담을 수행했을 때 얻는 이익을 dp에 저장
+// 5. 현재 상담을 수행하고 다음 상담을 수행했을 때의 이익과 이전에 계산된 이익 중에서 더 큰 이익을 dp에 저장
 
-// for (i = 0; i < n; ) {
-//   term = arr[i][0];
-//   allTerm += term;
-//   if (allTerm <= n) {
-//     income += arr[i][1];
-//     i += term;
-//   } else break;
-// }
+function solution(n, arr) {
+  const dp = new Array(n).fill(0);
 
-// console.log(income);
+  for (let i = 0; i < n; i++) {
+    const [period, profit] = arr[i];
+
+    if (i + period > n) continue;
+    dp[i] = dp[i] + profit;
+
+    // 현재 상담이 끝난 후부터 다음 상담까지 기간에 대해 반복
+    for (let j = i + period; j < n; j++) {
+      dp[j] = Math.max(dp[j], dp[i]);
+    }
+  }
+  return Math.max(...dp);
+}
+
+console.log(solution(n, arr));
