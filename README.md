@@ -36,5 +36,5 @@
 
 |     이진천<br>       |            우지음            |                  박재현                 |                      김유은                |
 | :-------------------------------: | :--------------------------------------: | :-----------------------------------------: | :------------------------------: | 
-| <img alt="이진천"  src="https://github.com/LeeJincheon.png" height="100" width="100"> | <img alt="우지음" src="https://github.com/oozeume.png" height="100" width="100"> |   <img alt="박재현"  src=" https://github.com/jae-hyeon-park.png" height="100" width="100"> | <img alt="김유은" src="https://github.com/YueunKim.png" height="100" width="100"> | 
+| <img alt="이진천"  src="https://github.com/LeeJincheon.png" height="100" width="100"> | <img alt="우지음" src="https://github.com/oozeume.png" height="100" width="100"> |   <img alt="박재현" src="https://github.com/jae-hyeon-park.png" height="100" width="100"> | <img alt="김유은" src="https://github.com/YueunKim.png" height="100" width="100"> | 
 |   [@LeeJincheon](https://github.com/LeeJincheon)   |     [@oozeume](https://github.com/oozeume)     |     [@jae-hyeon-park](https://github.com/jae-hyeon-park)     |        [@YueunKim](https://github.com/YueunKim)      |
