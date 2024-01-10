@@ -30,6 +30,7 @@ public class Main {
         //          2 2 3 3 4 4 5 5 6
         //                4 5 6 7 8 10
 
+
         System.out.println(dp[k]);
     } //main
 }
