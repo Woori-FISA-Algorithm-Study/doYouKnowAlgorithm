@@ -12,6 +12,7 @@ const lenY = str2.length;
 
 // 결과값을 저장할 2차원 dp 필요
 dp = new Array(lenX + 1).fill(0).map(() => new Array(lenY + 1).fill(0));
+// 동일한 식 => Array.from({ length: lenX + 1 }, () => Array(lenY + 1).fill(0));
 
 
 for (let i = 1; i <= lenX; i++) {
