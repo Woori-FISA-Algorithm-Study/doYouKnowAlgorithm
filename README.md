@@ -1,6 +1,6 @@
 ### 📅 스터디 일정
 
-매주 금요일 오후 6시
+매주 목요일 오후 6시
 
 <br>
 
@@ -26,8 +26,6 @@
     1. 알고리즘 정의
     2. 문제 풀이 공유
     3. 다음 주 필수 문제 선택
-  - 미팅 후
-    1. PR 코멘트 & Approve & merge
 
 <br>
 <br>
@@ -36,5 +34,5 @@
 
 |     이진천<br>       |            우지음            |                  박재현                 |                      김유은                |
 | :-------------------------------: | :--------------------------------------: | :-----------------------------------------: | :------------------------------: | 
-| <img alt="이진천"  src="https://github.com/LeeJincheon.png" height="100" width="100"> | <img alt="우지음" src="https://github.com/oozeume.png" height="100" width="100"> |   <img alt="박재현"  src=" https://github.com/jae-hyeon-park.png" height="100" width="100"> | <img alt="김유은" src="https://github.com/YueunKim.png" height="100" width="100"> | 
+| <img alt="이진천"  src="https://github.com/LeeJincheon.png" height="100" width="100"> | <img alt="우지음" src="https://github.com/oozeume.png" height="100" width="100"> |   <img alt="박재현" src="https://github.com/jae-hyeon-park.png" height="100" width="100"> | <img alt="김유은" src="https://github.com/YueunKim.png" height="100" width="100"> | 
 |   [@LeeJincheon](https://github.com/LeeJincheon)   |     [@oozeume](https://github.com/oozeume)     |     [@jae-hyeon-park](https://github.com/jae-hyeon-park)     |        [@YueunKim](https://github.com/YueunKim)      |
